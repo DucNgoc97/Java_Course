@@ -15,7 +15,7 @@ public class Main {
 		String b = buf.readLine();
 		float c = Float.parseFloat(a);
 		float d = Float.parseFloat(b);
-		System.out.println("tao la ket qua " + "\n"+ (c + d));
+		System.out.println("minh la ket qua " + "\n"+ (c + d));
 
 	}
 }
