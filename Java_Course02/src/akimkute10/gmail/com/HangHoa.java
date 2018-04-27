@@ -52,6 +52,6 @@ public class HangHoa {
 
 	public String inThongTin() {
 		return "Ten hang hoa " + tenHang + ", Ngay San Xuat : " + ngaySanXuat + ", so luong " + soLuong + ", dongia "
-				+ donGia;
+				+ donGia +" Tong tien " + tinhTien;
 	}
 }
