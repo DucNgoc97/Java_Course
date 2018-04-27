@@ -1,57 +1,62 @@
-package akimkute10.gmail.com;
+package akimkute05.gmail.com;
 
 public class HangHoa {
-	private String tenHang;
-	private String ngaySanXuat;
-	private float donGia;
-	private int soLuong;
+	private String tenhang;
+	// Tiếp tục cho các thuộc tính còn lại
+
+	private String ngaysanxuat;
+	private double dongia;
+	private int soluong;
 
 	public String getTenHang() {
-		return tenHang;
+		return tenhang;
 	}
 
-	public void setTenHang(String ten) {
-		tenHang = ten;
+	public void setTenHang(String th) {
+		tenhang = th;
 	}
-
-	public void setNgaySanXuat(String ngay) {
-		ngaySanXuat = ngay;
-	}
+	// Tiếp tục cho các phương thức còn lại
 
 	public String getNgaySanXuat() {
-		return ngaySanXuat;
+		return ngaysanxuat;
 	}
 
-	public float getDonGia() {
-		return donGia;
+	public void setNgaySanXuat(String nsx) {
+		ngaysanxuat = nsx;
 	}
 
-	public void setDonGia(float dg) {
-		donGia = dg;
+	public double getDonGia() {
+		return dongia;
+	}
+
+	public void setDonGia(double dg) {
+		dongia = dg;
+	}
+
+	public HangHoa() { //khai báo hàng hóa để chèn các thuộc tính set ở main
 	}
 
 	public int getSoLuong() {
-		return soLuong;
+		return soluong;
 	}
 
 	public void setSoLuong(int sl) {
-		soLuong = sl;
+		soluong = sl;
 	}
 
-	public HangHoa(String ten, String ngay, float dg, int sl) {
-		tenHang = ten;
-		ngaySanXuat = ngay;
-		donGia = dg;
-		soLuong = sl;
+	public double TinhTien() {
+		return dongia * soluong;
 	}
 
-	public double tinhTien() {
-		return soLuong * donGia;
-
+	public HangHoa(String th, String nsx, double dg, int sl) {
+		tenhang = th;
+		ngaysanxuat = nsx;
+		dongia = dg;
+		soluong = sl;
 	}
 
-	public String inThongTin() {
-		return "Ten hang hoa " + tenHang + ", Ngay San Xuat : " + ngaySanXuat + ", so luong " + soLuong + ", dongia "
-				+ donGia +", Tong tien " + tinhTien;
+	public String toString() {
+		return "Tên hàng: " + tenhang + "\n" + "Ngày sản xuất: " + ngaysanxuat + "\n" + "Đơn giá: " + dongia + "\n"
+				+ "Số lượng: " + soluong + "\n" + "Thành tiền: " + TinhTien();
 	}
 }
