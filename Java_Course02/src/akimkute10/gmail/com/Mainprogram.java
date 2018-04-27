@@ -1,4 +1,4 @@
-papackage akimkute05.gmail.com;
+papackage akimkute10.gmail.com;
 
 import java.util.Scanner;
 
