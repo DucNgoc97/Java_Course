@@ -4,19 +4,19 @@ public class KhachHang {
 	private String username;
 	private String password;
 
-	public void setusername(String name) {
+	public void setUsername(String name) {
 		username = name;
 	}
 
-	public String getusername() {
+	public String getUsername() {
 		return username;
 	}
 
-	public void setpassword(String pass) {
+	public void setPassword(String pass) {
 		password = pass;
 	}
 
-	public String getpassword() {
+	public String getPassword() {
 		return password;
 	}
 
