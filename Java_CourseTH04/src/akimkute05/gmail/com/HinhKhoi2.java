@@ -16,5 +16,9 @@ public class HinhKhoi2 extends HinhKhoi1 {
 		super(chieucao, chieudai);
 		this.chieurong = chieurong;
 	}
+	public double thetich2() {
+		return chieucao * chieudai * chieurong;
+	}
+
 
 }
