@@ -3,16 +3,16 @@ package akimkute05.gmail.com;
 public class HinhKhoi {
 	protected float chieucao;
 
-	public float getChieucao() {
+	float getChieucao() {
 		return chieucao;
+	}
+
+	void setChieucao(float chieucao) {
+		this.chieucao = chieucao;
 	}
 
 	public HinhKhoi(float chieucao) {
 		this.chieucao = chieucao;
 	}
 
-	@Override
-	public String toString() {
-		return "chieu cao : " + chieucao;
-	}
 }
