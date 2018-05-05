@@ -16,5 +16,9 @@ public class HinhKhoi1 extends HinhKhoi {
 		super(chieucao);
 		this.chieudai = chieudai;
 	}
+	
+	public double thetich1() {
+		return chieucao * Math.pow(chieudai, 2);
+	}
 
 }
