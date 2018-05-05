@@ -1,13 +1,27 @@
 package akimkute05.gmail.com;
 
 public class Point {
-	private float x;//Tọa độ x
-	private float y;//Tọa độ y
-	
+	private float x;// Tọa độ x
+	private float y;// Tọa độ y
+ 
 	public Point() {
-		this.x = Math.round(Math.random()*50);
-		this.y = Math.round(Math.random()*50);
+		this.setX(Math.round(Math.random() * 50));
+		this.setY(Math.round(Math.random() * 50));
 	}
-	
-	//Tạo getters và setters cho x và y
+
+	float getX() {
+		return x;
+	}
+
+	private void setX(float x) {
+		this.x = x;
+	}
+
+	float getY() {
+		return y;
+	}
+
+	private void setY(float y) {
+		this.y = y;
+	}
 }
